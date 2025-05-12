@@ -7,7 +7,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
 http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="df120bb4-9752-4228-9ef6-eed588c73d22" >
-		<http:listener-connection host="0.0.0.0" port="8081" />
+		<http:listener-connection host="0.0.0.0" port="8082" />
 	</http:listener-config>
 	<flow name="helloworldFlow" doc:id="0a510585-2b64-4a25-99cd-cf653317b73c" >
 		<http:listener doc:name="Listener" doc:id="17b4109c-c3fb-49d0-ac0d-07d509fe7114" config-ref="HTTP_Listener_config" path="/test"/>
