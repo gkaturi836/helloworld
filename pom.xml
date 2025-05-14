@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>4cedb7b9-dce7-4016-bc9c-ec2f2a42f4b6</groupId>
@@ -45,7 +47,7 @@
 							<http>
 								<inbound>
 									<publicUrl>${publicURL}</publicUrl>
-									<!-- 									<forwardSslSession>true</forwardSslSession> -->
+									<!-- <forwardSslSession>true</forwardSslSession> -->
 									<lastMileSecurity>true</lastMileSecurity>
 								</inbound>
 							</http>
@@ -167,5 +169,17 @@
 			<layout>default</layout>
 		</repository>
 	</distributionManagement>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.mule.runtime</groupId>
+				<artifactId>mule-runtime-bom</artifactId>
+				<version>4.9.4</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 </project>
