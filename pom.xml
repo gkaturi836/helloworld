@@ -17,7 +17,7 @@
 
 		<app.runtime>4.9.4</app.runtime>
 		<mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
-		<munit.version>3.4.0</munit.version>
+		<!-- <munit.version>3.4.0</munit.version> -->
 	</properties>
 
 	<build>
@@ -55,7 +55,7 @@
 					</cloudhub2Deployment>
 				</configuration>
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>com.mulesoft.munit.tools</groupId>
 				<artifactId>munit-maven-plugin</artifactId>
 				<version>${munit.version}</version>
@@ -76,8 +76,9 @@
 							<format>html</format>
 						</formats>
 					</coverage>
+					 <runtimeVersion>4.3.0-20210719</runtimeVersion>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 
@@ -106,20 +107,20 @@
 			<version>19.3.0.0</version>
 			<type>jar</type>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.mulesoft.munit</groupId>
 			<artifactId>munit-runner</artifactId>
 			<version>${munit.version}</version>
 			<classifier>mule-plugin</classifier>
 			<scope>test</scope>
-		</dependency>
-		<dependency>
+		</dependency> -->
+<!-- 		<dependency>
 			<groupId>com.mulesoft.munit</groupId>
 			<artifactId>munit-tools</artifactId>
 			<version>${munit.version}</version>
 			<classifier>mule-plugin</classifier>
 			<scope>test</scope>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.mule.weave</groupId>
 			<artifactId>assertions</artifactId>
